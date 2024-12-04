@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bussin' Notepad fr fr</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for them fire icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="no-cap-wrapper">
+        <!-- Top toolbar with the drip -->
+        <div class="toolbar-fr">
+            <div class="file-actions">
+                <button class="yeet-btn" title="New File"><i class="fas fa-file"></i></button>
+                <button class="download-btn" title="Save File"><i class="fas fa-download"></i></button>
+                <button class="upload-btn" title="Open File"><i class="fas fa-folder-open"></i></button>
+            </div>
+            
+            <div class="format-actions">
+                <button class="bold-btn" title="Bold Text"><i class="fas fa-bold"></i></button>
+                <button class="italic-btn" title="Italic Text"><i class="fas fa-italic"></i></button>
+                <button class="underline-btn" title="Underline Text"><i class="fas fa-underline"></i></button>
+                <button class="highlight-btn" title="Highlight Text"><i class="fas fa-highlighter"></i></button>
+            </div>
+
+            <div class="vibe-check">
+                <select class="font-drip">
+                    <option value="Arial">Basic Arial</option>
+                    <option value="Times New Roman">Boomer Times</option>
+                    <option value="Comic Sans MS">Meme Lord</option>
+                    <option value="Impact">Chad Impact</option>
+                    <option value="Courier New">Hackerman</option>
+                    <option value="Georgia">Fancy Vibes</option>
+                    <option value="Verdana">Clean AF</option>
+                    <option value="Trebuchet MS">No Cap Font</option>
+                    <option value="Palatino">Bougie Tingz</option>
+                    <option value="Lucida Console">Terminal Drip</option>
+                </select>
+                <div class="highlight-colors">
+                    <button class="color-btn default-highlight" title="Default Green" data-color="rgba(0, 255, 157, 0.5)">
+                        <i class="fas fa-circle"></i>
+                    </button>
+                    <button class="color-btn" title="Sus Red" data-color="rgba(255, 69, 58, 0.5)">
+                        <i class="fas fa-circle"></i>
+                    </button>
+                    <button class="color-btn" title="Sheesh Yellow" data-color="rgba(255, 214, 10, 0.5)">
+                        <i class="fas fa-circle"></i>
+                    </button>
+                    <button class="color-btn" title="Bussin Blue" data-color="rgba(10, 132, 255, 0.5)">
+                        <i class="fas fa-circle"></i>
+                    </button>
+                    <button class="color-btn" title="Purple Rain" data-color="rgba(191, 90, 242, 0.5)">
+                        <i class="fas fa-circle"></i>
+                    </button>
+                </div>
+                <button class="theme-toggle" title="Switch Theme"><i class="fas fa-moon"></i></button>
+            </div>
+        </div>
+
+        <!-- The main text area where magic happens -->
+        <div class="text-area-wrapper">
+            <div id="no-cap-editor" contenteditable="true" placeholder="Start typing something bussin fr fr..."></div>
+        </div>
+
+        <!-- Bottom status bar -->
+        <div class="status-bar">
+            <span class="word-count">Words: 0</span>
+            <span class="autosave-status">Autosaved W</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
